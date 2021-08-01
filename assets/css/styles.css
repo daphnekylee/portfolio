@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    position: fixed;
+    top: 60px;
+    left: 100px;
+    width: 250px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid gray;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1.6;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2D170c;
+}
+
+nav a:hover {
+    color: #CB3C00;
+}
+
+.main-content {
+    width: 750px;
+    position: fixed;
+    top: 60px;
+    margin-left: 355px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homepage-text {
+    margin-top: 200px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.nav-name {
+    text-align: center;
+}
+
+.social {
+    margin: 10px;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#about-me {
+    padding: 10px 50px 10px 50px;
+    justify-content: space-around;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+#bio2 {
+    display: none;
+}
+
+.main-content-writing {
+    width: 750px;
+    position: fixed;
+    top: 60px;
+    margin-left: 355px;
+    height: 80%;
+    overflow: scroll;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured-card {
+    width: 220px;
+    height: 170px;
+}
+
+.featured-image {
+    width: 220px;
+}
+
+.main-content-writing a {
+    text-decoration: underline;
+    color: #2D170c;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+}
+
+.main-content-writing a:hover {
+    color: #CB3C00;
+    cursor: crosshair;
+}
+
+.more-work {
+    position: relative;
+    margin-left: 15px;
+    padding-top: 50px;
+}
+
+.more-work ul {
+    list-style-type: none;
+    line-height: 2;
+    letter-spacing: 0.05em;
+}
