@@ -41,9 +41,9 @@
             <h2>About Me</h2>
         </div>
         <div id="about-me">
-            <div id="bio1">
-                <button id="btn1">sci-fi version</button> / <button id="btn2">the earthly
+            <button id="btn1">sci-fi version</button> / <button id="btn2">the earthly
                     version</button>
+            <div id="bio1">
                 <p>In the year 2178, Daphne K. Lee was posthumously awarded The Halo Prize for intergalactic
                     achievement.
                     The
@@ -82,14 +82,20 @@
     </section>
 
     <script>
+        let button1 = document.getElementById('btn1');
         let button2 = document.getElementById('btn2');
-        let x = document.getElementById('bio2');
+        let bio1 = document.getElementById('bio1');
+        let bio2 = document.getElementById('bio2');
+
+        button1.addEventListener('click', () => {
+            if (bio1.style.display == 'none') { bio1.style.display = 'block' };
+            if (bio2.style.display == 'block') { bio2.style.display = 'none' };  
+        });
 
         button2.addEventListener('click', () => {
-        if(x.style.display === 'none'){
-        x.style.display = 'block';
-        }
-        })
+            if (bio2.style.display == 'none') { bio2.style.display = 'block' };
+            if (bio1.style.display == 'block') { bio1.style.display = 'none' };  
+        });
     </script>
 </body>
 
